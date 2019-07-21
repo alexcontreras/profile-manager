@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Route path="/" exact component={Index} />
-      <Route path="/profile" component={Profile} />
+      <Route path="/profile/:id" component={Profile} />
     </Router>
   );
 }
