@@ -1,11 +1,16 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import "./App.css";
+
+import Index from "./components/Index";
+import Profile from "./components/pages/Profile";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+    <Router>
+      <Route path="/" exact component={Index} />
+      <Route path="/profile" component={Profile} />
+    </Router>
   );
 }
 
